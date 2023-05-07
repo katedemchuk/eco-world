@@ -1,0 +1,19 @@
+.Scene {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Scene-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.Scene-question {
+  display: inline-block;
+  background-color: #ffd700;
+}

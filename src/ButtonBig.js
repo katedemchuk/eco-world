@@ -1,7 +1,7 @@
 import './ButtonBig.css';
 
-export default function ButtonBig({children}) {
+export default function ButtonBig({children, action, doBlink=false}) {
   return (
-    <button className="ButtonBig">{children}</button>
+    <button onClick={action} className={'ButtonBig ' + (doBlink ? 'ButtonBig-blink' : '')}>{children}</button>
   );
 }

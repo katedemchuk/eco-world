@@ -19,17 +19,17 @@
  *    status {string} "green" | "yellow" | "red" - Статус результату відповіді
  */
 
-export const QUESTIONS = [
+export const questions = [
   {
     description: "Ти прокидаєшся і йдеш у ванну, щоб почистити зуби.",
     question: "Як ти це робитимеш?",
-    image: "",
+    image: "question-image.png",
     options: [
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       }
     ],
     results: [
@@ -49,16 +49,16 @@ export const QUESTIONS = [
     image: "",
     options: [
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       }
     ],
     results: [
@@ -85,16 +85,16 @@ export const QUESTIONS = [
     question: "Продуктам з яким маркуванням ти будеш надавати перевагу?",
     options: [
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       }
     ],
     results: [
@@ -121,16 +121,16 @@ export const QUESTIONS = [
     question: "У що будеш їх класти?",
     options: [
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       }
     ],
     results: [
@@ -158,16 +158,16 @@ export const QUESTIONS = [
     image: "",
     options: [
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: ""
+        image: "option-image.png"
       },
       {
-        image: "",
+        image: "option-image.png",
         description: "покладу так/не загортатиму"
       }
     ],

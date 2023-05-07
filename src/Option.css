@@ -1,0 +1,57 @@
+.Option {
+  width: 100%;
+  height: 200px;
+  border-style: solid;
+  border-width: 3px;
+  border-bottom-width: 7px;
+  border-left-width: 6px;
+  border-radius: 25px;
+  border-color: #b7b7b7;
+  display: inline-block;
+  flex-basis: 47%;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.Option:nth-child(odd) {
+  margin-right: 15px;
+}
+
+.Option-image {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.Option-selectable {
+  cursor: pointer;
+}
+
+.Option-selectable:hover,
+.Option-chosen {
+  border-color: #000;
+  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.4);
+}
+
+/* .Option-red {
+  background-color: rgba(242, 95, 92, 0.2);
+}
+
+.Option-green {
+  background-color: rgba(79, 123, 88, 0.2);
+}
+
+.Option-yellow {
+  background-color: rgba(254, 232, 134, 0.2);
+} */
+
+.Option-description {
+  font-size: 17px;
+}
