@@ -18,6 +18,10 @@ export default function Scene({content, nextPage, isLast, finish}) {
       <p className="Scene-description">{content.description}</p>
       <p className="Scene-question"><b>{content.question}</b></p>
 
+      {content.image && !showOptions && !showResults &&
+        <div className="Scene-image" style={{backgroundImage: `url(/images/${content.image})`}}></div>
+      }
+
       {showOptions && !showResults && <div className="Scene-options">{options}</div>}
 
       {showResults && <div className="Scene-options">{results}</div>}
@@ -26,7 +30,7 @@ export default function Scene({content, nextPage, isLast, finish}) {
 
       {showOptions && !showResults && <ButtonBig action={() => {setShowResults(true); if (content.results[selected].status === 'green') updateResultInLS()}} disabled={selected === null}>Підтвердити вибір</ButtonBig>}
 
-      {showResults && !isLast && <ButtonBig action={() => {setSelected(null); setShowResults(false); nextPage();}}>Наступне запитання</ButtonBig>}
+      {showResults && !isLast && <ButtonBig action={() => {setSelected(null); setShowResults(false); nextPage((hasImage) => {setShowOptions(hasImage)});}}>Наступне запитання</ButtonBig>}
 
       {showResults && isLast && <ButtonBig action={finish}>Закінчити</ButtonBig>}
     </div>

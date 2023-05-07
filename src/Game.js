@@ -10,10 +10,11 @@ export default function Game({finishGame}) {
   const [page, setPage] = useState(+savedPage);
   const question = questions[page];
 
-  function nextPage() {
+  function nextPage(cb) {
     const newPage = page + 1;
     setPage(newPage);
     updatePageInLS(newPage);
+    cb(!questions[newPage].image);
   }
 
   return (
