@@ -23,13 +23,13 @@ export const questions = [
   {
     description: "Ти прокидаєшся і йдеш у ванну, щоб почистити зуби.",
     question: "Як ти це робитимеш?",
-    image: "question-image.png",
+    image: "q-1.png",
     options: [
       {
-        image: "option-image.png"
+        image: "a-1-1.png"
       },
       {
-        image: "option-image.png"
+        image: "a-1-2.png"
       }
     ],
     results: [
@@ -46,19 +46,19 @@ export const questions = [
   {
     description: "Після вмивання ти хочеш поснідати, але у холодильнику порожньо. Потрібно сходити у магазин",
     question: "Як туди будеш добиратись?",
-    image: "question-image.png",
+    image: "q-2.png",
     options: [
       {
-        image: "option-image.png"
+        image: "a-2-1.png"
       },
       {
-        image: "option-image.png"
+        image: "a-2-2.png"
       },
       {
-        image: "option-image.png"
+        image: "a-2-3.png"
       },
       {
-        image: "option-image.png"
+        image: "a-2-4.png"
       }
     ],
     results: [
@@ -85,16 +85,16 @@ export const questions = [
     question: "Продуктам з яким маркуванням ти будеш надавати перевагу?",
     options: [
       {
-        image: "option-image.png"
+        image: "a-3-1.png"
       },
       {
-        image: "option-image.png"
+        image: "a-3-2.png"
       },
       {
-        image: "option-image.png"
+        image: "a-3-3.png"
       },
       {
-        image: "option-image.png"
+        image: "a-3-4.png"
       }
     ],
     results: [
@@ -121,16 +121,16 @@ export const questions = [
     question: "У що будеш їх класти?",
     options: [
       {
-        image: "option-image.png"
+        image: "a-4-1.png"
       },
       {
-        image: "option-image.png"
+        image: "a-4-2.png"
       },
       {
-        image: "option-image.png"
+        image: "a-4-3.png"
       },
       {
-        image: "option-image.png"
+        image: "a-4-4.png"
       }
     ],
     results: [
@@ -155,19 +155,19 @@ export const questions = [
   {
     description: "Після походу у магазин ти приготував собі на сніданок салат та смачно поїв. Але в тебе залишились половинки деяких овочів.",
     question: "Як ти складеш їх у холодильник?",
-    image: "question-image.png",
+    image: "q-5.png",
     options: [
       {
-        image: "option-image.png"
+        image: "a-5-1.png"
       },
       {
-        image: "option-image.png"
+        image: "a-5-2.png"
       },
       {
-        image: "option-image.png"
+        image: "a-5-3.png"
       },
       {
-        image: "option-image.png",
+        image: "a-5-4.png",
         description: "покладу так/не загортатиму"
       }
     ],
