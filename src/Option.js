@@ -10,7 +10,7 @@ export default function Option({content, selectable=false, select, isSelected=fa
     <div className={optionClassName} onClick={select}>
 
       {content.image &&
-        <div className="Option-image" style={{backgroundImage: `url(/images/${content.image})`}}></div>
+        <div className="Option-image" style={{backgroundImage: `url(https://katedemchuk.github.io/eco-world/images/${content.image})`}}></div>
       }
 
       {content.description &&

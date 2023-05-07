@@ -19,7 +19,7 @@ export default function Scene({content, nextPage, isLast, finish}) {
       <p className="Scene-question"><b>{content.question}</b></p>
 
       {content.image && !showOptions && !showResults &&
-        <div className="Scene-image" style={{backgroundImage: `url(/images/${content.image})`}}></div>
+        <div className="Scene-image" style={{backgroundImage: `url(https://katedemchuk.github.io/eco-world/images/${content.image})`}}></div>
       }
 
       {showOptions && !showResults && <div className="Scene-options">{options}</div>}
