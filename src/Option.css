@@ -16,6 +16,7 @@
   align-items: center;
   justify-content: center;
   padding: 15px;
+  flex-direction: column;
 }
 
 .Option:nth-child(odd) {
@@ -37,21 +38,37 @@
 .Option-selectable:hover,
 .Option-chosen {
   border-color: #000;
-  box-shadow: 0 0 15px 5px rgba(255, 215, 0, 0.4);
+  box-shadow: 0 0 15px 7px rgba(255, 215, 0, 0.7);
 }
 
-/* .Option-red {
-  background-color: rgba(242, 95, 92, 0.2);
+.Option-red {
+  background-color: rgba(255, 0, 0, 0.1);
 }
 
 .Option-green {
-  background-color: rgba(79, 123, 88, 0.2);
+  background-color: rgba(0, 128, 0, 0.1);
 }
 
 .Option-yellow {
-  background-color: rgba(254, 232, 134, 0.2);
-} */
+  background-color: rgba(255, 255, 0, 0.1);
+}
+
+.Option-red.Option-chosen {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.Option-green.Option-chosen {
+  background-color: rgba(0, 128, 0, 0.6);
+}
+
+.Option-yellow.Option-chosen {
+  background-color: rgba(255, 255, 0, 0.6);
+}
 
 .Option-description {
   font-size: 17px;
+}
+
+.Option-chosen {
+  font-weight: bold;
 }
