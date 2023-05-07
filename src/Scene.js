@@ -2,13 +2,16 @@ import './Scene.css';
 import ButtonBig from './ButtonBig';
 import Option from './Option';
 import { useState } from 'react';
+import { updateResultInLS } from './localStorage';
 
 export default function Scene({content, nextPage, isLast, finish}) {
   const [selected, setSelected] = useState(null);
-  const options = content.options.map((o, index) => <Option content={o} selectable select={() => setSelected(index)} isSelected={index === selected} />);
-  const results = content.results.map((r, index) => <Option content={r} isSelected={index === selected} />);
   const [showOptions, setShowOptions] = useState(!content.image);
   const [showResults, setShowResults] = useState(false);
+
+  const options = content.options.map((o, index) => <Option key={`option-${index}`} content={o} selectable select={() => setSelected(index)} isSelected={index === selected} />);
+
+  const results = content.results.map((r, index) => <Option key={`result-${index}`} content={r} isSelected={index === selected} />);
 
   return (
     <div className="Scene">
@@ -21,7 +24,7 @@ export default function Scene({content, nextPage, isLast, finish}) {
 
       {!showOptions && <ButtonBig action={() => setShowOptions(true)} >Показати варіанти</ButtonBig>}
 
-      {selected !== null && !showResults && <ButtonBig action={() => setShowResults(true)}>Підтвердити вибір</ButtonBig>}
+      {showOptions && !showResults && <ButtonBig action={() => {setShowResults(true); if (content.results[selected].status === 'green') updateResultInLS()}} disabled={selected === null}>Підтвердити вибір</ButtonBig>}
 
       {showResults && !isLast && <ButtonBig action={() => {setSelected(null); setShowResults(false); nextPage();}}>Наступне запитання</ButtonBig>}
 

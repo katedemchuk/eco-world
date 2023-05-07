@@ -3,6 +3,7 @@ import './App.css';
 import Game from './Game';
 import Start from './Start';
 import Finish from './Finish';
+import { getPageFromLS } from './localStorage';
 
 const GAME_STATUS = {
   notStarted: 'not started',
@@ -11,7 +12,8 @@ const GAME_STATUS = {
 };
 
 function App() {
-  const [status, setStatus] = useState('not started');
+  const savedPage = getPageFromLS();
+  const [status, setStatus] = useState(savedPage !== null ? GAME_STATUS.inProgress : GAME_STATUS.notStarted);
 
   return (
     <div className="App">
