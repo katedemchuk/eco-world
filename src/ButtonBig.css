@@ -17,7 +17,7 @@
   animation: shadow 5s linear infinite;
 }
 
-.ButtonBig:hover {
+.ButtonBig:hover:not([disabled]) {
   background-color: #ffd700;
 }
 
@@ -33,4 +33,11 @@
   100% {
     box-shadow: none;
   }
+}
+
+.ButtonBig:disabled {
+  border-color: #e3e3e3;
+  color: #e3e3e3;
+  user-select: none;
+  cursor: auto;
 }
