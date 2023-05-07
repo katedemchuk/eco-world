@@ -46,7 +46,7 @@ export const questions = [
   {
     description: "Після вмивання ти хочеш поснідати, але у холодильнику порожньо. Потрібно сходити у магазин",
     question: "Як туди будеш добиратись?",
-    image: "",
+    image: "question-image.png",
     options: [
       {
         image: "option-image.png"
@@ -155,7 +155,7 @@ export const questions = [
   {
     description: "Після походу у магазин ти приготував собі на сніданок салат та смачно поїв. Але в тебе залишились половинки деяких овочів.",
     question: "Як ти складеш їх у холодильник?",
-    image: "",
+    image: "question-image.png",
     options: [
       {
         image: "option-image.png"
