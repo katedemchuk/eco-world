@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Amatic SC';
+  src: url(./fonts/Amatic_SC/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Amatic SC';
+  font-weight: bold;
+  src: url(./fonts/Amatic_SC/AmaticSC-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Sofia Sans';
+  src: url(./fonts/Sofia_Sans/SofiaSans-VariableFont_wght.ttf);
+}
+
 html, body, #root {
   height: 100%;
 }
