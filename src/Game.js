@@ -22,8 +22,8 @@ export default function Game({finishGame}) {
     img.src = im_url;
   }
 
-  if (question.image) preload_image(`https://katedemchuk.github.io/eco-world/images/${question.image}`);
-  question.options.forEach((option) => {
+  if (questions[page + 1].image) preload_image(`https://katedemchuk.github.io/eco-world/images/${questions[page + 1].image}`);
+  questions[page + 1].options.forEach((option) => {
     if (option.image) preload_image(`https://katedemchuk.github.io/eco-world/images/${option.image}`);
   });
 
