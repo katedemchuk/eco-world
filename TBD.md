@@ -9,5 +9,7 @@
 - connect analytics;
 - domain name?
 - add contact info;
-- add font files;
 - edit README;
+
+
++ add font files;
