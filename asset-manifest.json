@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/eco-world/static/css/main.3bbad315.css",
-    "main.js": "/eco-world/static/js/main.d94a5504.js",
+    "main.js": "/eco-world/static/js/main.37783e4f.js",
     "static/js/787.64277b0f.chunk.js": "/eco-world/static/js/787.64277b0f.chunk.js",
     "index.html": "/eco-world/index.html",
     "main.3bbad315.css.map": "/eco-world/static/css/main.3bbad315.css.map",
-    "main.d94a5504.js.map": "/eco-world/static/js/main.d94a5504.js.map",
+    "main.37783e4f.js.map": "/eco-world/static/js/main.37783e4f.js.map",
     "787.64277b0f.chunk.js.map": "/eco-world/static/js/787.64277b0f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3bbad315.css",
-    "static/js/main.d94a5504.js"
+    "static/js/main.37783e4f.js"
   ]
 }
