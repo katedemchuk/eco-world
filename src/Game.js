@@ -17,6 +17,16 @@ export default function Game({finishGame}) {
     cb(!questions[newPage].image);
   }
 
+  function preload_image(im_url) {
+    let img = new Image();
+    img.src = im_url;
+  }
+
+  if (question.image) preload_image(`https://katedemchuk.github.io/eco-world/images/${question.image}`);
+  question.options.forEach((option) => {
+    if (option.image) preload_image(`https://katedemchuk.github.io/eco-world/images/${option.image}`);
+  });
+
   return (
     <div className="Game">
       <Scene content={question} nextPage={nextPage} isLast={page === questions.length - 1} finish={finishGame} />
